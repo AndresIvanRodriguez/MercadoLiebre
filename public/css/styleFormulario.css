@@ -1,0 +1,281 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* NORMALIZACIÓN*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*VARIABLES*/
+:root{
+    /*COLORES*/
+    --amarillo: #eac926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    /*TAMAÑOS DE FUENTES*/
+    --text-sm: 1.2em;
+    --text-md:1.6em;
+    --text-lg:1.8em;
+    --title-md: 2.4em;
+    /*FUENTES */
+    --roboto: "Roboto", sans-serif;
+    /*TAMAÑO ICONOS*/
+    --sizeicon-sm:1.2em;
+    --sizeicon-md:1.5em;
+    --sizeicon-lg:2em;
+    /*COLORES*/
+    --colordisponible: #39b54a;
+    --colorNOdisponibles:red;
+}
+/*CONFIGURACIONES GENERALES*/
+html{
+     font-size:62.5%;
+     font-family: "Roboto", sans-serif ;
+}
+h2{
+    font-size: var(--title-md);
+}
+p {
+    font-size: var(--text-sm);
+}
+body{
+    background-color: var(--gris-claro);
+}
+.button{
+    background-color: var(--amarillo);
+    border:none;
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*HEADER INCIO*/
+header {
+    background-color: var(--amarillo);
+}
+div.top-header{
+    padding: 5%;
+    display:flex;
+}
+header picture.logo{
+    display: block;
+    width: 50%;
+}
+header nav{
+    font-size:var(--text-sm);
+}
+
+header ul li {
+    list-style-type: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: var(--negro);
+}
+nav{
+    display:none;
+}
+header .form .input{
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-oscuro);
+    border-left: none;
+    font-size: 24px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    color: var(--gris-oscuro);
+    padding: 2px;
+    width:90%;
+    height:40px;
+    overflow: hidden;
+}
+header .form .submit{
+    background-color: var(--blanco);
+    border: 1 px solid var(--negro);
+    font-size:23px;
+    text-align: center;
+    color: var(--gris-oscuro);
+    width: 10%;
+    padding: 3px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid var(--gris-oscuro);
+    border-right: none;
+    overflow: hidden;
+}
+
+header div.top-header p {
+    text-align:center;
+}
+div.burger-menu{
+    text-align: center;
+}
+div.burger-menu i{
+    background-color: blue;
+    font-size: var(--sizeicon-lg);
+    color: var(--blanco);
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 20px 0 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form{
+    width: 100%;
+}
+.barras{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+.top-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.top-info section{
+    font-size: var(--text-md);
+}
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+}
+.button1{
+    width: 20%;
+}
+.button2{
+width: 40%;
+}
+/*BANNER*/
+section.banner img{
+    width:100%;
+}
+
+/*MAIN*/
+main{
+    display: flex;
+    justify-content:center;
+}
+main section{
+    width:60%;
+    background-color: var(--blanco);
+    margin:40px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:column;
+    font-size: 16px;
+    justify-content: center;
+    padding: 15px;
+}
+main section form div{
+    padding: 2px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+main section form div input{
+    height: 50px;
+    padding:5px;
+    font-size: var(--text-md);
+}
+.botones button{
+    background-color:blue;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border:none;
+    padding: 5px;
+    height: 50px;
+}
+.botones button a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-diseño{
+    padding: 7px;
+}
+
+.small-options{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.small-options div{
+    display: block;
+    flex-wrap: wrap;
+}
+.botones{
+    transition:all 2s;
+}
+.botones button:hover{
+    background-color: #0022AA;
+}
+/*FOOTER*/
+footer section{
+    text-align: center;
+    color: var(--gris-oscuro);
+    padding: 2em;
+
+}
+footer i {
+    color: var(--azul);
+    font-size: var(--sizeicon-lg);
+    padding: 5px;
+}
+/*RESPONSIVE*/
+@media screen and (min-width: 534px){
+    .Desciption{
+        display:block;
+    }
+
+    .product-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .product-container article{
+        max-width: 42%;
+    }
+    main section article {
+        box-shadow : 0px 0px 10px rgb(100,100,100);
+    }
+    
+    nav{
+        display: flex;
+        align-content: flex-end;
+        text-decoration: none;
+    }
+    nav button a{
+        text-decoration:none;
+        color: var(--negro);
+    }
+    .burger-menu{
+        display: none;
+    }
+   
+    footer div{
+        display: flex;
+    }
+    
+}
+@media screen and (min-width: 760px){
+    .product-container article{
+        max-width: 22%;
+    } 
+}

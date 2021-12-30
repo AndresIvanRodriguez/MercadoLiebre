@@ -1,0 +1,301 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* NORMALIZACIÓN*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*VARIABLES*/
+:root{
+    /*COLORES*/
+    --amarillo: #eac926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    /*TAMAÑOS DE FUENTES*/
+    --text-sm: 1.2em;
+    --text-md:1.6em;
+    --text-lg:1.8em;
+    --title-md: 2.4em;
+    /*FUENTES */
+    --roboto: "Roboto", sans-serif;
+    /*TAMAÑO ICONOS*/
+    --sizeicon-sm:1.2em;
+    --sizeicon-md:1.5em;
+    --sizeicon-lg:2em;
+    /*COLORES*/
+    --colordisponible: #39b54a;
+    --colorNOdisponibles:red;
+}
+/*CONFIGURACIONES GENERALES*/
+html{
+     font-size:62.5%;
+     font-family: "Roboto", sans-serif ;
+}
+h2{
+    font-size: var(--title-md);
+}
+p {
+    font-size: var(--text-sm);
+}
+body{
+    background-color: var(--gris-claro);
+}
+.button{
+    background-color: var(--amarillo);
+    border:none;
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*HEADER INCIO*/
+header {
+    background-color: var(--amarillo);
+}
+div.top-header{
+    padding: 5%;
+    display:flex;
+}
+header picture.logo{
+    display: block;
+    width: 50%;
+}
+header nav{
+    font-size:var(--text-sm);
+}
+
+header ul li {
+    list-style-type: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: var(--negro);
+}
+nav{
+    display:none;
+}
+header .form .input{
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-oscuro);
+    border-left: none;
+    font-size: 24px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    color: var(--gris-oscuro);
+    padding: 2px;
+    width:90%;
+    height:40px;
+    overflow: hidden;
+}
+header .form .submit{
+    background-color: var(--blanco);
+    border: 1 px solid var(--negro);
+    font-size:23px;
+    text-align: center;
+    color: var(--gris-oscuro);
+    width: 10%;
+    padding: 3px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid var(--gris-oscuro);
+    border-right: none;
+    overflow: hidden;
+}
+
+header div.top-header p {
+    text-align:center;
+}
+div.burger-menu{
+    text-align: center;
+}
+div.burger-menu i{
+    background-color: blue;
+    font-size: var(--sizeicon-lg);
+    color: var(--blanco);
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 20px 0 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form{
+    width: 100%;
+}
+.barras{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+.top-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.top-info section{
+    font-size: var(--text-md);
+}
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+}
+.button1{
+    width: 20%;
+}
+.button2{
+width: 40%;
+}
+/*BANNER*/
+section.banner img{
+    width:100%;
+}
+
+/*MAIN INICIO*/
+main{
+    width:90%;
+    margin: 0 auto;
+}
+
+main section article img{
+    width:100%;
+}
+main section article{
+    box-sizing: border-box;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-claro);
+    margin:10px;
+    padding: 15px;
+}
+main section article div{
+    background-color: var(--blanco);
+    padding-right: 10%;
+}
+main section article{
+    transition: all 3s;
+}
+main section article:hover i{
+    transform:rotate(-90deg);
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+main section article:hover .Desciption{
+    display: block;
+}
+
+main section article i{
+    display: block ;
+    font-size: 16px ;
+    color:var(--colordisponible);
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    border-radius: 50% ;
+    position: absolute ;
+    right: 20px ;
+    top: -15px ;
+}
+.costos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+}
+
+.logoenvio{
+    text-align: right;
+
+}
+.infoproducto{
+    border-top: 1px solid var(--gris-claro);
+    position: relative;
+    padding: 10px;
+}
+.discount{
+    color: var(--colordisponible);
+    max-width:80%;
+}
+.price{
+    font-size:var(--text-lg);
+}
+.discount, .Desciption{
+    font-size:var(--text-md);
+}
+h2, .Desciption{
+    color: var(--gris-oscuro);
+}
+
+.Desciption{
+    display:none;
+}
+
+main section h3{
+    margin: 15px 0px 0px 0px;
+}
+/*MAIN FIN*/
+
+
+
+/*FOOTER*/
+footer section{
+    text-align: center;
+    color: var(--gris-oscuro);
+    padding: 2em;
+
+}
+footer i {
+    color: var(--azul);
+    font-size: var(--sizeicon-lg);
+    padding: 5px;
+}
+/*RESPONSIVE*/
+@media screen and (min-width: 534px){
+
+    .product-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .product-container article{
+        max-width: 42%;
+    }
+    
+    
+    nav{
+        display: flex;
+        align-content: flex-end;
+        text-decoration: none;
+    }
+    nav button a{
+        text-decoration:none;
+        color: var(--negro);
+    }
+    .burger-menu{
+        display: none;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    
+    footer div{
+        display:flex;
+    }
+}
+@media screen and (min-width: 760px){
+    .product-container article{
+        max-width: 22%;
+    } 
+}
